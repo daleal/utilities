@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for dir in ./*/
+do
+dir=${dir%*/}
+rm -rf ${dir}/.git
+rm -rf ${dir}/__pycache__
+rm -rf ${dir}/.vscode
+rm -rf ${dir}/_DS_Store
+done
